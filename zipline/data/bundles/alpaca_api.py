@@ -23,10 +23,11 @@ custom_data_path = join(user_home, '.zipline/custom_data')
 CLIENT: tradeapi.REST = None
 NY = "America/New_York"
 
+ALPACA_YAML_PATH=join(user_home, '.zipline/alpaca.yaml')
 
 def initialize_client():
     global CLIENT
-    with open("alpaca.yaml", mode='r') as f:
+    with open(ALPACA_YAML_PATH, mode='r') as f:
         o = yaml.safe_load(f)
         key = o["key_id"]
         secret = o["secret"]
@@ -37,7 +38,7 @@ def initialize_client():
 
 ASSETS = None
 def list_assets():
-    with open("alpaca.yaml", mode='r') as f:
+    with open(ALPACA_YAML_PATH, mode='r') as f:
         o = yaml.safe_load(f)
         try:
             universe = Universe[o["universe"]]
