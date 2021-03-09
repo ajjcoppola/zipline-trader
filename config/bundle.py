@@ -43,7 +43,7 @@ class AlpacaConfig:
 
     @property
     def custom_asset_list(self):
-        if CONFIG_PATH and self.al:
+        if CONFIG_PATH and ("custom_asset_list" in self.al):
             return self.al["custom_asset_list"]
         else:
             return os.environ.get('ZT_CUSTOM_ASSET_LIST')

@@ -1,0 +1,52 @@
+#class Universe(Enum):
+#    ALL = "ALL"
+#    SP100 = "S&P 500"
+#    SP500 = "S&P 500"
+#    NASDAQ100 = "NASDAQ 100"
+#one could achieve that by indicating that in the alpaca.yaml file, like so:
+
+#universe: NASDAQ100
+
+# Alpaca Paper
+#key_id: "PKY1G6NJ5RM2CBWY4H05"
+#secret: "FtBVexF7i8N2To5QiDNRrHawMTtonLBCInAAfGhe"
+#base_url: https://paper-api.alpaca.markets
+#universe: NASDAQ100
+#ALL
+
+
+# Alpaca Live
+#key_id: "AKGZFMX75V331YG6366P"
+#secret: "kqkhZpTCigFGf08ypLDJVhPjOaVYY3QNoWqFoylB"
+#base_url: https://api.alpaca.markets
+
+# Alpaca Paper
+#custom_asset_list: segsecm: SaaSTech 
+alpaca:
+  key_id: "PKY1G6NJ5RM2CBWY4H05"
+  secret: "FtBVexF7i8N2To5QiDNRrHawMTtonLBCInAAfGhe"
+  base_url: https://paper-api.alpaca.markets
+  universe: NASDAQ100
+
+  
+
+
+#kckustom_asset_list: ADBE,    ADSK,     APPF,     AVLR,     BL,     BOX,     CHGG,     CRM,     CSOD,             DOCU,         EVBG,     FIVN,     HUBS,             MIME,         NEWR,     NOW,     OKTA,      PD,      PLAN,     PS,       QTWO,     RNG,     RP,         SHOP,     SMAR,     SPLK,     SPSC,     TEAM,     TLND,     TWLO,     TWOU,         VEEV,     WDAY,     WORK,         ZEN,     ZM, 
+
+#alpha-vantage:
+#  ALPHAVANTAGE_API_KEY: "<YOUR-KEY>"
+#  AV_FREQ_SEC: 60
+#  AV_CALLS_PER_FREQ: 5
+#  AV_TOLERANCE_SEC: 1
+#
+#
+## WindowsPort: #5439 #5432 #25
+##AWS LinuxPort: 25 (Found from: netstat -anpt | grep LISTEN
+#backend:
+#  type: postgres
+#  postgres:
+#    host: localhost
+#    port: 5432
+#    user: postgres
+#    password: postgres
+

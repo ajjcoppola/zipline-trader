@@ -71,14 +71,14 @@ PyYAML==5.3.1
 IbPy2==0.8.0
 polling==0.3.1
 # try using exact version
-bcolz==1.2.1
+bcolz ###ajjc ==1.2.1
 # v 3.0+ leads to: ERROR: Could not build wheels for h5py which use PEP 517 and cannot be installed directly. specify
 # exact version
 h5py==2.10.0
 html5lib==1.1
 beautifulsoup4==4.9.3
 # psql-backend
-psycopg2==2.8.6
+###ajjc installed psycopg2-bainary instead: psycopg2==2.8.6
 # alpha-vantage-bundle
 alpha_vantage==2.3.1
 ratelimit==2.2.1
